@@ -3,6 +3,7 @@
     <wb-module deploy-name="clouder">
         <wb-resource deploy-path="/" source-path="/WebContent"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/test"/>
         <property name="context-root" value="clouder"/>
         <property name="java-output-path" value="/clouder/build/classes"/>
     </wb-module>

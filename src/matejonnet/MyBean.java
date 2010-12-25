@@ -6,6 +6,8 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.inject.Named;
 
+import org.junit.Test;
+
 
 @Named
 @RequestScoped
@@ -28,5 +30,10 @@ public class MyBean implements Serializable {
 
 	public String getTime() {
 		return System.currentTimeMillis() + "";
+	}
+	
+	@Test
+	public void test() {
+		
 	}
 }

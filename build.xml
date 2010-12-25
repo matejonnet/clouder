@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="clouder">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="C:/prog/eclipse_helios"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="JBoss 6.0 Runtime [JBoss 6.0 Runtime].libraryclasspath">
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/antlr.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/asm.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/autonumber-plugin.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/bcel.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/bsf.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/bsh.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cdi-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/commons-beanutils.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/commons-collections.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-common-schemas.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-common-utilities.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-bindings-coloc.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-bindings-http.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-bindings-object.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-bindings-soap.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-bindings-xml.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-core.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-databinding-aegis.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-databinding-jaxb.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-frontend-jaxws.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-frontend-simple.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-management.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-transports-http.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-transports-jms.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-transports-local.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-ws-addr.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-ws-policy.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-ws-rm.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-rt-ws-security.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-tools-common.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-tools-java2ws.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-tools-validator.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-tools-wsdlto-core.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-tools-wsdlto-databinding-jaxb.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-tools-wsdlto-frontend-jaxws.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-xjc-boolean.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-xjc-bug671.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-xjc-dv.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/cxf-xjc-ts.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/dtdparser.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/ejb31-calendar-expr-parser.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/ejbref-resolver-ejb30-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/ejbref-resolver-ejb31-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/ejbref-resolver-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/FastInfoset.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/hibernate-commons-annotations.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/hibernate-core.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/hibernate-entitymanager.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/hibernate-jpa-2.0-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/hibernate-validator-legacy.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/hibernate-validator.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/hornetq-bootstrap.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/hornetq-core.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/hornetq-jboss-as-integration.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/hornetq-jms.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/hornetq-logging.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/hsqldb-plugin.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/hsqldb.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jaxen.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jaxws-httpserver-httpspi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-annotations-api_1.1_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-as-hibernate-int.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-as-hornetq-int.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-as-profileservice.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-common-jdbc-wrapper.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-connector-api_1.5_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-current-invocation-aspects.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb-api_3.1_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-async-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-async-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-cache.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-common.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-concurrency-aop.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-concurrency-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-container-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-context-base.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-context-naming.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-core.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-deployers.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-effigy-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-effigy-common.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-effigy-int2.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-embedded-api-shrinkwrap.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-embedded-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-embedded-impl-base.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-embedded-impl-shrinkwrap.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-embedded-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-endpoint.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-ext-api-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-ext-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-instantiator-deployer.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-instantiator-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-instantiator-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-interceptors.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-jndi-binder.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-jpa-int.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-mc-int.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-metadata-deployers.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-metadata.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-nointerface-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-nointerface-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-proxy-clustered.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-proxy-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-proxy-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-security.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-singleton-aop-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-singleton-deployer.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-singleton-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-singleton-proxy-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-singleton-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-statefulcache-ispn.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-timeout-3.1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-timeout-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-timerservice-extension.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-timerservice-naming.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-timerservice-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-transactions.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-tx2-aop.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-tx2-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-tx2-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-vfs-impl-vfs3.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ejb3-vfs-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-el-api_2.2_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-embedded-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-embedded-core.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ha-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ha-server-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ha-server-cache-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-ha-server-core.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-iiop-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-iiop.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-injection-switchboard-deployer.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-injection.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-integration.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-interceptor-core.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-interceptor-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-interceptors-api_1.1_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jacc-api_1.4_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jad-api_1.2_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jaspi-api_1.0_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jaxb-api_2.2_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jaxb-intros.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jaxr-api_1.0_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jaxrpc-api_1.1_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jaxws-api_2.2_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jca.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jms-api_1.1_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jpa-deployers.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jpa-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jpa-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jpa-vfs3.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jsp-api_2.2_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jsr77.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-jsr88.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-logmanager-log4j.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-management.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-marshalling-river.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-marshalling.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-mc-int-servlet.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-metadata-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-metadata-common.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-metadata-ear.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-metadata-ejb.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-metadata-rar.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-metadata-war.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-monitoring.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-negotiation.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-profileservice-plugins.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-reloaded-naming-deployers.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-reloaded-naming-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-reloaded-naming-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-remoting-3.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-remoting-aspects.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-remoting.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-resolver-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-resolver-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-security-aspects.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-serialization.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-servlet-api_3.0_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-srp.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-switchboard-metadata.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-threads.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-transaction-api_1.1_spec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss-transaction-aspects.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jboss.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jbossas-remoting.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jbosscx-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jbossha.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jbossjts-integration.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jbossjts.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jbossws-common.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jbossws-framework.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jbossws-jboss60.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jbossws-native-core.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jbossws-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jbossxacml.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jcl-over-slf4j.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jmx-adaptor-plugin.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jnpserver.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/joesnmp.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/jsr181-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/log4j-snmp-appender.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/log4j.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/mail-plugin.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/mail.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/managed-beans-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/managed-beans-mc-int.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/managed-beans-metadata-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/managed-beans-metadata-jbmeta.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/managed-beans-metadata.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/managed-beans-proxy-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/managed-beans-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/neethi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/netty.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/picketbox-bare.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/properties-plugin.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/proxy-javassist.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/proxy-reflect.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/proxy-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/quartz.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/scanning-deployers.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/scheduler-plugin-example.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/scheduler-plugin.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/serializer.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/shrinkwrap-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/shrinkwrap-extension-vfs3.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/shrinkwrap-impl-base.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/shrinkwrap-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/slf4j-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/slf4j-jboss-logmanager.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/validation-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/weld-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/wscommons-policy.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/wsdl4j.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/wss4j.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/xalan.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/XmlSchema.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/xmlsec.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/xnio-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/concurrent.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/dom4j.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/getopt.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/javassist.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/javax.inject.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jaxb-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-aop-asintegration-core.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-aop-asintegration-mc.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-aop-deployers.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-aop-jboss5.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-aop-mc-int.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-aop.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-bootstrap-api-as.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-bootstrap-api-mc.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-bootstrap-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-bootstrap-impl-as.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-bootstrap-impl-base.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-bootstrap-impl-mc.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-bootstrap-spi-as.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-bootstrap-spi-mc.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-bootstrap-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-classloader.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-classloading-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-classloading-vfs.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-classloading.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-classpool-jbosscl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-classpool-scoped.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-classpool.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-common-core.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-dependency.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-deployers-client-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-deployers-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-deployers-core-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-deployers-core.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-deployers-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-deployers-jmx.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-deployers-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-deployers-structure-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-deployers-vfs-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-deployers-vfs.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-j2se.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-jmx-annotations.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-jmx-mc-int.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-jmx.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-kernel.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-logging.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-logmanager.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-main.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-managed.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-mbeans.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-mbeanserver.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-mdr.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-metatype.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-profileservice-core.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-profileservice-domain.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-profileservice-persistence.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-profileservice-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-reflect.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-security-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-stdio.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-system-jmx.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-system.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jboss-vfs.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jbosssx-server.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jbosssx.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/jbossxb.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/scanning-impl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/scanning-plugins.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/scanning-spi.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/trove.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/wstx-lgpl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/xercesImpl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/lib/xml-resolver.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/lib/mysql-connector-java-5.1.13-bin.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deploy/jbossweb.sar/jboss-web-service.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deploy/jbossweb.sar/jstl.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/jboss-aop-jboss5.deployer/jboss-aop-aspects.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/jboss-aop-jboss5.deployer/jboss-as-aspects-jboss-aspect-library.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/jboss-aop-jboss5.deployer/pluggable-instrumentor.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/ejb3.deployer/jboss-as-ejb3-deployer.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/activation.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/commons-lang.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/hornetq-core-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/hornetq-jms-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jacorb.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jaxws-rt.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jaxws-tools.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-aop-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-appclient.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-aspect-jdk50-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-deployment.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-ejb3-common-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-ejb3-core-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-ejb3-proxy-clustered-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-ejb3-proxy-impl-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-ejb3-proxy-spi-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-ejb3-security-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-ha-legacy-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-jsr77-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-profileservice-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-srp-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-system-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jboss-system-jmx-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jbossall-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jbossjmx-ant.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jbosssx-as-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jbosssx-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jbossws-cxf-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jbossws-cxf-transports-httpserver.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jettison.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jmx-invoker-adaptor-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/jnp-client.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/logkit.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/policy.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/scout.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/slf4j-jboss-logging.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/stax-api.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/stax-ex.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/streambuffer.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/client/velocity.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/apache-mime4j-0.6.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/async-http-servlet-3.0-2.1-beta-1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/commons-codec-1.3.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/commons-logging-1.1.0.jboss.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/httpclient-4.0.3.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/httpcore-4.0.1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/jackson-core-asl-1.5.3.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/jackson-jaxrs-1.5.3.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/jackson-mapper-asl-1.5.3.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/jackson-xc-1.5.3.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/javassist-3.12.1.GA.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/jaxb-impl-2.2.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/jaxrs-api-2.1-beta-1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/jboss-as-resteasy-6.0.0.20101110-CR1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/jcip-annotations-1.0.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/jettison-1.2.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/jyaml-1.3.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/mail-1.4.2.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/resteasy-atom-provider-2.1-beta-1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/resteasy-cdi-2.1-beta-1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/resteasy-jackson-provider-2.1-beta-1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/resteasy-jaxb-provider-2.1-beta-1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/resteasy-jaxrs-2.1-beta-1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/resteasy-jettison-provider-2.1-beta-1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/resteasy-multipart-provider-2.1-beta-1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/resteasy-yaml-provider-2.1-beta-1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/scannotation-1.0.2.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/resteasy.deployer/sjsxp-1.0.1.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/jsf.deployer/Mojarra-2.0/jsf-libs/jboss-faces.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/jsf.deployer/Mojarra-2.0/jsf-libs/jsf-api-2.0.3.jar"/>
+        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/jsf.deployer/Mojarra-2.0/jsf-libs/jsf-impl-2.0.3.jar"/>
+    </path>
+    <path id="Web App Libraries.libraryclasspath"/>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.8.1.v4_8_1_v20100427-1100/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+    </path>
+    <path id="clouder.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="JBoss 6.0 Runtime [JBoss 6.0 Runtime].libraryclasspath"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="test">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="clouder.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" source="${source}" target="${target}">
+            <src path="test"/>
+            <classpath refid="clouder.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="SimpleTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="matejonnet.test.SimpleTest" todir="${junit.output.dir}"/>
+            <classpath refid="clouder.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
