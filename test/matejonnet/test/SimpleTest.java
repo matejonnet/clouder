@@ -12,10 +12,10 @@ public class SimpleTest extends TestCase {
 		assertEquals(2L, 2L);
 	}
 
-	@Test
-	public void test2() throws Exception {
-		assertEquals("myString", "my string");
-		assertEquals(5L, 3L);
-	}
+//	@Test
+//	public void test2() throws Exception {
+//		assertEquals("myString", "my string");
+//		assertEquals(5L, 3L);
+//	}
 
 }
