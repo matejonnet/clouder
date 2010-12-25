@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+		xmlns:f="http://java.sun.com/jsf/core"  
+		xmlns:h="http://java.sun.com/jsf/html">
+ <h:head>
+ </h:head>
+
+    <h:body>
+    	<h1>JSF 2 password example</h1>
+ 
+	  <h:form>
+    		Password : 
+    		<h:inputText value="#{userBean.name}" >
+				<f:ajax render="output time1" event="blur" />    			
+    		</h:inputText>
+    		<br /><br /><br />
+    		
+    		<h:outputText id="output" value="#{userBean.name}" /><br />
+    		<h:outputText id="time1" value="#{userBean.time}" /><br />
+    		<h:outputText id="time2" value="#{userBean.time}" /><br />
+    		<br />
+    		<h:commandButton>
+				<f:ajax event="mouseover" render="time2"/>
+			</h:commandButton>
+    		
+    		<br />
+    		<h:commandLink action="index2?faces-redirect=true" value="index 2" />
+    		<br />
+ 			<h:commandLink action="index3?faces-redirect=true" value="index 3" />
+    		
+    	  </h:form>
+ 
+    </h:body>
+</html>
