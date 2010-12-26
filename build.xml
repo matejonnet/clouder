@@ -408,12 +408,15 @@
     <path id="Web App Libraries.libraryclasspath"/>
     <path id="EAR Libraries.libraryclasspath"/>
     <path id="JUnit 4.libraryclasspath">
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.8.1.v4_8_1_v20100427-1100/junit.jar"/>
+        <!--<pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.8.1.v4_8_1_v20100427-1100/junit.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+        -->
+    	<pathelement location="lib/junit.jar"/>
+    	<pathelement location="lib/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
     </path>
     <path id="clouder.classpath">
         <pathelement location="build/classes"/>
-        <path refid="JBoss 6.0 Runtime [JBoss 6.0 Runtime].libraryclasspath"/>
+    	<!--<path refid="JBoss 6.0 Runtime [JBoss 6.0 Runtime].libraryclasspath"/>-->
         <path refid="Web App Libraries.libraryclasspath"/>
         <path refid="EAR Libraries.libraryclasspath"/>
         <path refid="JUnit 4.libraryclasspath"/>
