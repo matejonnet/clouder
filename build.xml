@@ -6,13 +6,14 @@
               as the first entry and export the buildfile again. -->
 <project basedir="." default="build" name="clouder">
     <property environment="env"/>
-    <property name="ECLIPSE_HOME" value="C:/prog/eclipse_helios"/>
-    <property name="junit.output.dir" value="junit"/>
+  <!--  <property name="ECLIPSE_HOME" value="C:/prog/eclipse_helios"/> -->
+ <!--   <property name="junit.output.dir" value="junit"/> -->
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.6"/>
     <property name="source" value="1.6"/>
     <path id="JBoss 6.0 Runtime [JBoss 6.0 Runtime].libraryclasspath">
-        <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/antlr.jar"/>
+     <!--
+    	<pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/antlr.jar"/>
         <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/asm.jar"/>
         <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/autonumber-plugin.jar"/>
         <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/common/lib/bcel.jar"/>
@@ -404,6 +405,7 @@
         <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/jsf.deployer/Mojarra-2.0/jsf-libs/jboss-faces.jar"/>
         <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/jsf.deployer/Mojarra-2.0/jsf-libs/jsf-api-2.0.3.jar"/>
         <pathelement location="C:/java/runtimes/jboss-6.0.0.20101110-CR1/server/default/deployers/jsf.deployer/Mojarra-2.0/jsf-libs/jsf-impl-2.0.3.jar"/>
+    -->
     </path>
     <path id="Web App Libraries.libraryclasspath"/>
     <path id="EAR Libraries.libraryclasspath"/>
@@ -468,10 +470,10 @@
         <antcall target="build"/>
     </target>
     <target name="SimpleTest">
-        <mkdir dir="${junit.output.dir}"/>
+      <!--  <mkdir dir="${junit.output.dir}"/> -->
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="matejonnet.test.SimpleTest" todir="${junit.output.dir}"/>
+            <!-- <test name="matejonnet.test.SimpleTest" todir="${junit.output.dir}"/> -->
             <classpath refid="clouder.classpath"/>
         </junit>
     </target>

@@ -9,7 +9,7 @@ public class SimpleTest extends TestCase {
 	@Test
 	public void test() throws Exception {
 		assertEquals("myString", "myString");
-		assertEquals(2L, 2L);
+//		assertEquals(2L, 2L);
 	}
 
 //	@Test
