@@ -1,0 +1,8 @@
+#Sun Dec 26 23:23:53 CET 2010
+activeProfiles=weld-se-embedded-1
+eclipse.preferences.version=1
+fullBuildGoals=process-test-resources
+resolveWorkspaceProjects=true
+resourceFilterGoals=process-resources resources\:testResources
+skipCompilerPlugin=true
+version=1
