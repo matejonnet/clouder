@@ -34,12 +34,14 @@ public class TemperatureConverterTest extends Arquillian {
 		  TemperatureConverter converter = new TemperatureConverter();
 	      Assert.assertEquals(converter.convertToCelsius(32d), 0d);
 	      Assert.assertEquals(converter.convertToCelsius(212d), 100d);
+	      System.out.println("passed 1");
 	   }
 
 	   @Test
 	   public void testConvertToCelsius() {
 	      Assert.assertEquals(converter.convertToCelsius(32d), 0d);
 	      Assert.assertEquals(converter.convertToCelsius(212d), 100d);
+	      System.out.println("passed 2");
 	   }
 
 
@@ -47,6 +49,7 @@ public class TemperatureConverterTest extends Arquillian {
 	   public void testConvertToFarenheit() {
 	      Assert.assertEquals(converter.convertToFarenheit(0d), 32d);
 	      Assert.assertEquals(converter.convertToFarenheit(100d), 212d);
+	      System.out.println("passed 3");
 	   }
 	  
 	}
