@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Command line test" failures="0" tests="3" time="0.716" errors="0">
-  <properties/>
-  <testcase name="testConvertToCelsius" time="0.01" classname="matejonnet.test.TemperatureConverterTest"/>
-  <testcase name="testConvertToCelsiusNoInect" time="0.0010" classname="matejonnet.test.TemperatureConverterTest"/>
-  <testcase name="testConvertToFarenheit" time="0.0010" classname="matejonnet.test.TemperatureConverterTest"/>
-</testsuite>
