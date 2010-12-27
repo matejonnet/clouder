@@ -1,16 +1,16 @@
 <testng-results>
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="753" started-at="2010-12-27T00:59:47Z" finished-at="2010-12-27T00:59:48Z">
+  <suite name="Command line suite" duration-ms="890" started-at="2010-12-27T01:27:59Z" finished-at="2010-12-27T01:28:00Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="753" started-at="2010-12-27T00:59:47Z" finished-at="2010-12-27T00:59:48Z">
+    <test name="Command line test" duration-ms="890" started-at="2010-12-27T01:27:59Z" finished-at="2010-12-27T01:28:00Z">
       <class name="matejonnet.test.TemperatureConverterTest">
-        <test-method status="PASS" signature="arquillianBeforeSuite()" name="arquillianBeforeSuite" is-config="true" duration-ms="53" started-at="2010-12-27T00:59:47Z" finished-at="2010-12-27T00:59:47Z">
+        <test-method status="PASS" signature="arquillianBeforeSuite()" name="arquillianBeforeSuite" is-config="true" duration-ms="48" started-at="2010-12-27T01:27:59Z" finished-at="2010-12-27T01:27:59Z">
         </test-method>
-        <test-method status="PASS" signature="arquillianBeforeClass()" name="arquillianBeforeClass" is-config="true" duration-ms="711" started-at="2010-12-27T00:59:47Z" finished-at="2010-12-27T00:59:48Z">
+        <test-method status="PASS" signature="arquillianBeforeClass()" name="arquillianBeforeClass" is-config="true" duration-ms="841" started-at="2010-12-27T01:27:59Z" finished-at="2010-12-27T01:28:00Z">
         </test-method>
-        <test-method status="PASS" signature="arquillianBeforeTest(java.lang.reflect.Method)" name="arquillianBeforeTest" is-config="true" duration-ms="18" started-at="2010-12-27T00:59:48Z" finished-at="2010-12-27T00:59:48Z">
+        <test-method status="PASS" signature="arquillianBeforeTest(java.lang.reflect.Method)" name="arquillianBeforeTest" is-config="true" duration-ms="20" started-at="2010-12-27T01:28:00Z" finished-at="2010-12-27T01:28:00Z">
           <params>
             <param index="0">
               <value>
@@ -19,9 +19,9 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="testConvertToCelsius()" name="testConvertToCelsius" duration-ms="10" started-at="2010-12-27T00:59:48Z" finished-at="2010-12-27T00:59:48Z">
+        <test-method status="PASS" signature="testConvertToCelsius()" name="testConvertToCelsius" duration-ms="10" started-at="2010-12-27T01:28:00Z" finished-at="2010-12-27T01:28:00Z">
         </test-method>
-        <test-method status="PASS" signature="arquillianAfterTest(java.lang.reflect.Method)" name="arquillianAfterTest" is-config="true" duration-ms="0" started-at="2010-12-27T00:59:48Z" finished-at="2010-12-27T00:59:48Z">
+        <test-method status="PASS" signature="arquillianAfterTest(java.lang.reflect.Method)" name="arquillianAfterTest" is-config="true" duration-ms="1" started-at="2010-12-27T01:28:00Z" finished-at="2010-12-27T01:28:00Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="arquillianBeforeTest(java.lang.reflect.Method)" name="arquillianBeforeTest" is-config="true" duration-ms="2" started-at="2010-12-27T00:59:48Z" finished-at="2010-12-27T00:59:48Z">
+        <test-method status="PASS" signature="arquillianBeforeTest(java.lang.reflect.Method)" name="arquillianBeforeTest" is-config="true" duration-ms="3" started-at="2010-12-27T01:28:00Z" finished-at="2010-12-27T01:28:00Z">
           <params>
             <param index="0">
               <value>
@@ -39,9 +39,9 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="testConvertToCelsiusNoInect()" name="testConvertToCelsiusNoInect" duration-ms="0" started-at="2010-12-27T00:59:48Z" finished-at="2010-12-27T00:59:48Z">
+        <test-method status="PASS" signature="testConvertToCelsiusNoInect()" name="testConvertToCelsiusNoInect" duration-ms="0" started-at="2010-12-27T01:28:00Z" finished-at="2010-12-27T01:28:00Z">
         </test-method>
-        <test-method status="PASS" signature="arquillianAfterTest(java.lang.reflect.Method)" name="arquillianAfterTest" is-config="true" duration-ms="0" started-at="2010-12-27T00:59:48Z" finished-at="2010-12-27T00:59:48Z">
+        <test-method status="PASS" signature="arquillianAfterTest(java.lang.reflect.Method)" name="arquillianAfterTest" is-config="true" duration-ms="0" started-at="2010-12-27T01:28:00Z" finished-at="2010-12-27T01:28:00Z">
           <params>
             <param index="0">
               <value>
@@ -50,7 +50,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="arquillianBeforeTest(java.lang.reflect.Method)" name="arquillianBeforeTest" is-config="true" duration-ms="2" started-at="2010-12-27T00:59:48Z" finished-at="2010-12-27T00:59:48Z">
+        <test-method status="PASS" signature="arquillianBeforeTest(java.lang.reflect.Method)" name="arquillianBeforeTest" is-config="true" duration-ms="2" started-at="2010-12-27T01:28:00Z" finished-at="2010-12-27T01:28:00Z">
           <params>
             <param index="0">
               <value>
@@ -59,11 +59,9 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="testConvertToFarenheit()" name="testConvertToFarenheit" duration-ms="0" started-at="2010-12-27T00:59:48Z" finished-at="2010-12-27T00:59:48Z">
+        <test-method status="PASS" signature="testConvertToFarenheit()" name="testConvertToFarenheit" duration-ms="0" started-at="2010-12-27T01:28:00Z" finished-at="2010-12-27T01:28:00Z">
         </test-method>
-        <test-method status="PASS" signature="arquillianAfterClass()" name="arquillianAfterClass" is-config="true" duration-ms="3" started-at="2010-12-27T00:59:48Z" finished-at="2010-12-27T00:59:48Z">
-        </test-method>
-        <test-method status="PASS" signature="arquillianAfterTest(java.lang.reflect.Method)" name="arquillianAfterTest" is-config="true" duration-ms="0" started-at="2010-12-27T00:59:48Z" finished-at="2010-12-27T00:59:48Z">
+        <test-method status="PASS" signature="arquillianAfterTest(java.lang.reflect.Method)" name="arquillianAfterTest" is-config="true" duration-ms="1" started-at="2010-12-27T01:28:00Z" finished-at="2010-12-27T01:28:00Z">
           <params>
             <param index="0">
               <value>
@@ -72,7 +70,9 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="arquillianAfterSuite()" name="arquillianAfterSuite" is-config="true" duration-ms="2" started-at="2010-12-27T00:59:48Z" finished-at="2010-12-27T00:59:48Z">
+        <test-method status="PASS" signature="arquillianAfterClass()" name="arquillianAfterClass" is-config="true" duration-ms="3" started-at="2010-12-27T01:28:00Z" finished-at="2010-12-27T01:28:00Z">
+        </test-method>
+        <test-method status="PASS" signature="arquillianAfterSuite()" name="arquillianAfterSuite" is-config="true" duration-ms="0" started-at="2010-12-27T01:28:00Z" finished-at="2010-12-27T01:28:00Z">
         </test-method>
       </class>
     </test>

@@ -6,10 +6,11 @@
         <methods>
           <include name="testConvertToCelsiusNoInect"/>
           <include name="arquillianBeforeSuite"/>
-          <include name="arquillianBeforeClass"/>
           <include name="arquillianAfterClass"/>
           <include name="arquillianAfterTest"/>
+          <include name="testConvertToFarenheit"/>
           <include name="arquillianAfterSuite"/>
+          <include name="testConvertToCelsius"/>
         </methods>
       </class>
     </classes>

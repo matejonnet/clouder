@@ -11,6 +11,19 @@
 		<!-- <arquillian.version>1.0.0-SNAPSHOT</arquillian.version> -->
 	</properties>
 
+<build>
+<plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-compiler-plugin</artifactId>
+<configuration>
+<source>1.6</source>
+<target>1.6</target>
+</configuration>
+</plugin>
+</plugins>
+</build> 
+
 	<dependencies>
 		<dependency>
 			<groupId>javax.enterprise</groupId>
@@ -48,11 +61,11 @@
 			<layout>default</layout>
 			<releases>
 				<enabled>true</enabled>
-				<!-- <updatePolicy>never</updatePolicy> -->
+				<updatePolicy>never</updatePolicy>
 			</releases>
 			<snapshots>
 				<enabled>true</enabled>
-				<!-- <updatePolicy>never</updatePolicy> -->
+				<updatePolicy>never</updatePolicy>
 			</snapshots>
 		</repository>
 	</repositories>
@@ -66,11 +79,11 @@
 			<layout>default</layout>
 			<releases>
 				<enabled>true</enabled>
-				<!-- <updatePolicy>never</updatePolicy> -->
+				<updatePolicy>never</updatePolicy>
 			</releases>
 			<snapshots>
 				<enabled>true</enabled>
-				<!-- <updatePolicy>never</updatePolicy> -->
+				<updatePolicy>never</updatePolicy>
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
@@ -119,47 +132,6 @@
 			</dependencyManagement>
 		</profile>
 		
-		<profile>
-			<id>weld-se-embedded-11</id>
-			<dependencies>
-				<dependency>
-					<groupId>org.jboss.arquillian.container</groupId>
-					<artifactId>arquillian-weld-se-embedded-1.1</artifactId>
-					<version>1.0.0.Alpha4</version>
-
-				</dependency>
-				<dependency>
-					<groupId>org.jboss.weld</groupId>
-					<artifactId>weld-core</artifactId>
-				</dependency>
-				<dependency>
-					<groupId>org.jboss.weld</groupId>
-					<artifactId>weld-api</artifactId>
-				</dependency>
-				<dependency>
-					<groupId>org.slf4j</groupId>
-					<artifactId>slf4j-simple</artifactId>
-				</dependency>
-
- <!-- add to prevent class not found -->
- <dependency>
- <groupId>javax.el</groupId>
- <artifactId>el-api</artifactId>
- <version>2.2</version>
- </dependency>
-				
-			</dependencies>
-			<dependencyManagement>
-				<dependencies>
-					<dependency>
-						<groupId>org.jboss.weld</groupId>
-						<artifactId>weld-core-bom</artifactId>
-						<version>1.0.1-SP1</version>
-						<type>pom</type>
-						<scope>import</scope>
-					</dependency>
-				</dependencies>
-			</dependencyManagement>
-		</profile>		
+		
 	</profiles>
 </project>
