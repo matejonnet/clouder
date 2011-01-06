@@ -1,5 +1,5 @@
-#Sun Dec 26 23:23:53 CET 2010
-activeProfiles=weld-se-embedded-1
+#Thu Dec 30 16:09:16 CET 2010
+activeProfiles=weld-se-embedded-1,jbossas-embedded-6
 eclipse.preferences.version=1
 fullBuildGoals=process-test-resources
 resolveWorkspaceProjects=true

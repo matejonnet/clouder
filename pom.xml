@@ -11,18 +11,21 @@
 		<!-- <arquillian.version>1.0.0-SNAPSHOT</arquillian.version> -->
 	</properties>
 
-<build>
-<plugins>
-<plugin>
-<groupId>org.apache.maven.plugins</groupId>
-<artifactId>maven-compiler-plugin</artifactId>
-<configuration>
-<source>1.6</source>
-<target>1.6</target>
-</configuration>
-</plugin>
-</plugins>
-</build> 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<debug>true</debug>
+				</configuration>
+				<!-- <version>2.0.2</version>  -->
+				<version>2.3.2</version>
+			</plugin>
+		</plugins>
+	</build>
 
 	<dependencies>
 		<dependency>
@@ -74,8 +77,8 @@
 		<pluginRepository>
 			<id>jboss-public-repository-group</id>
 			<name>JBoss Public Maven Repository Group</name>
-			<!-- <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url> -->
-			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
+			<url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+			<!-- <url>https://repository.jboss.org/nexus/content/groups/public/</url>  -->
 			<layout>default</layout>
 			<releases>
 				<enabled>true</enabled>
@@ -110,14 +113,14 @@
 					<groupId>org.slf4j</groupId>
 					<artifactId>slf4j-simple</artifactId>
 				</dependency>
-				
- <!-- add to prevent class not found -->
- <dependency>
- <groupId>javax.el</groupId>
- <artifactId>el-api</artifactId>
- <version>2.2</version>
- </dependency>
 
+				<!-- add to prevent: java.lang.NoClassDefFoundError: javax/el/ELResolver (see surefire-reports) -->
+				<dependency>
+					<groupId>javax.el</groupId>
+					<artifactId>el-api</artifactId>
+					<version>2.2</version>
+				</dependency>
+ 
 			</dependencies>
 			<dependencyManagement>
 				<dependencies>
@@ -131,7 +134,117 @@
 				</dependencies>
 			</dependencyManagement>
 		</profile>
-		
-		
+
+		<profile>
+			<id>jbossas-embedded-6</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.jboss.arquillian.container</groupId>
+					<artifactId>arquillian-jbossas-embedded-6</artifactId>
+					<version>1.0.0.Alpha4</version>
+				</dependency>
+				<dependency>
+					<groupId>org.jboss.jbossas</groupId>
+					<artifactId>jboss-as-depchain</artifactId>
+					<version>6.0.0.20100721-M4</version>
+					<type>pom</type>
+				</dependency>
+			</dependencies>
+			<dependencyManagement>
+				<dependencies>
+					<dependency>
+						<groupId>org.jboss.jbossas</groupId>
+						<artifactId>jboss-as-depchain</artifactId>
+						<version>6.0.0.20100721-M4</version>
+						<type>pom</type>
+						<scope>import</scope>
+					</dependency>
+				</dependencies>
+			</dependencyManagement>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.7.1</version>
+						<configuration>
+							<additionalClasspathElements>
+								<additionalClasspathElement>${env.JBOSS_HOME}/client/jbossws-native-client.jar</additionalClasspathElement>
+								<!-- Because jbossweb.sar contains shared web.xml, which must be 
+									visible from same CL as TomcatDeployer.class.getClassLoader -->
+								<additionalClasspathElement>${env.JBOSS_HOME}/server/default/deploy/jbossweb.sar</additionalClasspathElement>
+							</additionalClasspathElements>
+							<redirectTestOutputToFile>true</redirectTestOutputToFile>
+							<trimStackTrace>false</trimStackTrace>
+							<printSummary>true</printSummary>
+							<forkMode>once</forkMode>
+							<!-- MaxPermSize Required to bump the space for relective data like 
+								classes, methods, etc. EMB-41. Endorsed required for things like WS support 
+								(EMB-61) -->
+							<argLine>-Xmx512m -XX:MaxPermSize=256m
+								-Djava.net.preferIPv4Stack=true
+								-Djava.util.logging.manager=org.jboss.logmanager.LogManager
+								-Djava.endorsed.dirs=${env.JBOSS_HOME}/lib/endorsed
+								-Djboss.home=${env.JBOSS_HOME}
+								-Djboss.boot.server.log.dir=${env.JBOSS_HOME}</argLine>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+   <profile>
+      <id>jbossas-remote-6-M4</id>
+      <dependencies>
+         <dependency>
+            <groupId>org.jboss.arquillian.container</groupId>
+            <artifactId>arquillian-jbossas-remote-6</artifactId>
+            <version>${arquillian.version}</version>
+         </dependency>
+        <dependency>
+            <groupId>org.jboss.jbossas</groupId>
+            <artifactId>jboss-as-client</artifactId>
+            <version>6.0.0.20100721-M4</version>
+            <type>pom</type>
+        </dependency>
+
+		<!-- add to prevent: java.lang.NoClassDefFoundError: javax/el/ELResolver (see surefire-reports) -->
+<!-- 
+		<dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>el-api</artifactId>
+			<version>2.2</version>
+		</dependency>
+ -->
+      </dependencies>
+   </profile>
+
+   <profile>
+      <id>jbossas-remote-6</id>
+      <dependencies>
+         <dependency>
+            <groupId>org.jboss.arquillian.container</groupId>
+            <artifactId>arquillian-jbossas-remote-6</artifactId>
+            <version>${arquillian.version}</version>
+         </dependency>
+        <dependency>
+            <groupId>org.jboss.jbossas</groupId>
+            <artifactId>jboss-as-client</artifactId>
+            <!-- <version>6.0.0.20101110-CR1</version>  -->
+            <version>6.0.0.Final</version>
+            
+            <type>pom</type>
+        </dependency>
+
+		<!-- add to prevent: java.lang.NoClassDefFoundError: javax/el/ELResolver (see surefire-reports) -->
+<!-- 
+		<dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>el-api</artifactId>
+			<version>2.2</version>
+		</dependency>
+ -->
+      </dependencies>
+   </profile>
+	
 	</profiles>
 </project>
